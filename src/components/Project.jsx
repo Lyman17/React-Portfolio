@@ -1,25 +1,79 @@
 import '../styles/Project.css';
 
+
+import muskvszuckImage from "src\assets\images\mvz.png";
+import pokeSquadImage from "src\assets\images\PokeSquad.Screenshot.png";
+import bookSearchEngineImage from "src\assets\images\screenshot.png";
+import socialNetworkApiImage from "src\assets\images\socialnetworkapi.png";
+import readmeGeneratorImage from "src\assets\images\ReadMeGenerator.png";
+import weatherDashboardImage from "src\assets\images\weatherdashboard.png";
+
+const projects = [
+  {
+    id: 1,
+    name: "Musk vs Zuck",
+    description: "A voting app for your favorite fighter",
+    image: muskvszuckImage,
+    deployedApp: "https://c-hickman23.github.io/Musk-Vs.-Zuck/",
+    repo: "https://github.com/Lyman17/Musk-Vs.-Zuck",
+  },
+  {
+    id: 2,
+    name: "pokeSquad",
+    description: "An app for tracking your Pokemon collection",
+    image: pokeSquadImage,
+    deployedApp: "https://lyman17.github.io/pokesquad/",
+    repo: "https://github.com/Lyman17/pokesquad",
+  },
+  {
+    id: 3,
+    name: "bookSearchEngine",
+    description: "A MERN project for searching books",
+    image: bookSearchEngineImage,
+    deployedApp: "https://book-search-engine-production-ddcc.up.railway.app/",
+    repo: "https://github.com/Lyman17/Book-Search-Engine",
+  },
+  {
+    id: 4,
+    name: "Social Network API",
+    description: "A back end database for a social network built with MongoDB",
+    image: socialNetworkApiImage,
+    deployedApp: "https://github.com/Lyman17/Social-Network-API",
+    repo: "https://github.com/Lyman17/Social-Network-API",
+  },
+  {
+    id: 5,
+    name: "ReadMe Generator",
+    description: "An CLI app for creating ReadMe.md files",
+    image: readmeGeneratorImage,
+    deployedApp: "https://github.com/Lyman17/professional-README-generator",
+    repo: "https://github.com/Lyman17/professional-README-generator",
+  },
+  {
+    id: 6,
+    name: "Weather Dashboard",
+    description: "An app to quickly get the current weather and 5 day forecast using OpenWeather API",
+    image: weatherDashboardImage,
+    deployedApp: "https://lyman17.github.io/Weather-Dashboard-ServerSide-APIs/",
+    repo: "https://github.com/Lyman17/Weather-Dashboard-ServerSide-APIs",
+  },
+];
+
 function Project() {
     return (
-        <section className="section">
-            <h2>Lorem Ipsum Dolor Sit Amet</h2>
-            <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-                quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
-                eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-                voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-                Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
-                quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                voluptas nulla pariatur?
-            </p>
-        </section>
+        <div>
+              {projects.map((project) => (
+                <div className="cardFormat">
+                    <img className="imageFormat" src={project.image} />
+                    <div>
+                        <h5>Name: {project.name}</h5>
+                        <p>Description: {project.description}</p>
+                        <a href="#">{project.deployedApp}</a>
+                        <a href="#">{project.repo}</a>
+                    </div>
+                </div>
+            ))}
+        </div>
     );
 }
 

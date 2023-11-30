@@ -1,10 +1,22 @@
 import '../styles/Footer.css';
+import emailIcon from "src\assets\images\mail.png"
+import gitHubIcon from "src\assets\images\github.png"
+import linkedInIcon from "src\assets\images\linkedin.png"
+
 
 function Footer() {
     return (
         <div className="footer">
-            <h2 >Contact Information</h2>
-            <a href="mailto:Brian@UtahMLShomes.com">Brian@UtahMLShomes.com</a>
+            <a href="mailto:Brian@UtahMLShomes.com">
+                <img src={emailIcon} alt="Email Icon" />
+            </a>
+            <a href="https://github.com/Lyman17">
+                <img src={gitHubIcon} alt="Github Icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/brianlyman/">
+                <img src={linkedInIcon} alt="LinkedIn Icon" />
+            </a>
+            
         </div>
     );
 }
