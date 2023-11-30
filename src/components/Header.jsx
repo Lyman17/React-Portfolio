@@ -1,10 +1,8 @@
-import '../styles/Header.css';
-
 function Header() {
     return (
         <div>
-            <header className="header">
-                <h1 className="header h1">Brian Lyman</h1>
+            <header className="text-center bg-green-500 font-bold p-4">
+                <h1 className="text-white text-4xl lg:text-5xl xl:text-6xl">Brian Lyman</h1>
             </header>
         </div>
     );
