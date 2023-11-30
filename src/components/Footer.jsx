@@ -4,11 +4,11 @@ import linkedInIcon from "src\assets\images\linkedin.png"
 
 function Footer() {
     return (
-        <div className="footer flex items-center justify-center space-x-4">
-            <a href="https://github.com/Lyman17" className="w-24 h-24 bg-white p-2 rounded-full">
+        <div className="footer flex flex-wrap items-center justify-center bg-gray-400 space-x-4 p-4">
+            <a href="https://github.com/Lyman17" className="w-20 h-20 bg-white p-2 rounded-full">
                 <img src={gitHubIcon} alt="Github Icon" />
             </a>
-            <a href="https://www.linkedin.com/in/brianlyman/" className="w-24 h-24 bg-white p-2 rounded-full">
+            <a href="https://www.linkedin.com/in/brianlyman/" className="w-20 h-20 bg-white p-2 rounded-full">
                 <img src={linkedInIcon} alt="LinkedIn Icon" />
             </a>
         </div>
