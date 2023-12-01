@@ -1,5 +1,5 @@
 import React from 'react';
-import html2pdf from 'html2pdf.js';
+import html2pdf from '/Lyman_Resume_LinkedIn.pdf';
 
 const Resume = () => {
   const downloadPDF = () => {
@@ -7,7 +7,7 @@ const Resume = () => {
 
     const pdfOptions = {
       margin: 10,
-      filename: 'public\Lyman_Resume_LinkedIn.pdf',
+      filename: '/Lyman_Resume_LinkedIn.pdf',
       image: { type: 'jpeg', quality: 0.98 },
       html2canvas: { scale: 2 },
       jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
@@ -37,9 +37,9 @@ const Resume = () => {
         </ul>
       </div>
 
-      <button onClick={downloadPDF} className="bg-blue-500 text-white text-lg px-4 py-2 rounded mt-4 hover:bg-blue-600">
+      {/* <button onClick={downloadPDF} className="bg-blue-500 text-white text-lg px-4 py-2 rounded mt-4 hover:bg-blue-600">
         Download PDF
-      </button>
+      </button> */}
     </div>
   );
 };
