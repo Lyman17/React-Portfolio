@@ -1,5 +1,5 @@
-import gitHubIcon from "public\images\github.png"
-import linkedInIcon from "public\images\linkedin.png"
+import gitHubIcon from "/images/github.png"
+import linkedInIcon from "/images/linkedin.png"
 
 
 function Footer() {

@@ -1,12 +1,12 @@
 import "tailwindcss/tailwind.css"
 
 
-import muskvszuckImage from "public\images\mvz.png";
-import pokeSquadImage from "public\images\PokeSquad.Screenshot.png";
-import bookSearchEngineImage from "public\images\screenshot.png";
-import socialNetworkApiImage from "public\images\socialnetworkapi.png";
-import readmeGeneratorImage from "public\images\ReadMeGenerator.png";
-import weatherDashboardImage from "public\images\weatherdashboard.png";
+import muskvszuckImage from "/images/mvz.png";
+import pokeSquadImage from "/images/PokeSquad.Screenshot.png";
+import bookSearchEngineImage from "/images/screenshot.png";
+import socialNetworkApiImage from "/images/socialnetworkapi.png";
+import readmeGeneratorImage from "/images/ReadMeGenerator.png";
+import weatherDashboardImage from "/images/weatherdashboard.png";
 
 const projects = [
   {
