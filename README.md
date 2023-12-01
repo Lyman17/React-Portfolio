@@ -1,7 +1,7 @@
 # React Portfolio
   
   ## Description
-  A portfolio designed to showcase my work made in React
+  A portfolio designed to showcase my work. Made in React
   ## Table of Contents
   - [Installation](#installation)
 - [Usage](#usage)
